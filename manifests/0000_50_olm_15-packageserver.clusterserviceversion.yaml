@@ -78,6 +78,8 @@ spec:
                 app: packageserver
             template:
               metadata:
+                annotations:
+                  workload.openshift.io/management: '{"effect": "PreferredDuringScheduling"}'
                 labels:
                   app: packageserver
               spec:
